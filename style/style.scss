@@ -1,0 +1,145 @@
+body {
+  border: 1px solid gainsboro;
+  font-family: 'Inter', sans-serif;
+}
+
+.header__container {
+  width: 1152px;
+  margin: auto;
+  border: 1px solid grey;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* list-style: none; */
+  margin: 0;
+}
+
+.header__nav-item {
+  display: block;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  color: #605953;
+  padding: 16px 20px 16px 20px;
+}
+
+.header__nav-link {
+  color: #605953;
+  text-decoration: none;
+}
+
+.button {
+  border-radius: 3px;
+  border: 0px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;  // можно ли отменить базовые стили? и нужно ли отменять? так как мой шрифт переопределился в body и тут снова указываю.
+
+  &--header{
+    background-color: #F3933D;
+    padding: 20px 20px 20px 20px;
+    color: #FEF4EC;
+  }
+
+  &--hero-section{
+    background-color: #F3933D;
+    padding: 16px 24px 16px 24px;
+    color: #EFEEEE;
+  }
+
+  &:hover {
+    background-color: #edba8d;
+  }
+
+  // &__icon {
+  //   background-image: url(../picture/Vector.png);
+  //   //background-size: 32px 32px;
+  //   //background-color: transparent; /* make the button transparent */
+  //   background-repeat: no-repeat;  /* make the background image appear only once */
+  //   //background-position: 0px 0px;  /* equivalent to 'top left' */
+  //   //border: none;           /* assuming we don't want any borders */
+  //   //cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  //   // height: 32px;           /* make this the size of your image */
+  //   //padding-left: 16px;     /* make text start to the right of the image */
+  //   vertical-align: middle; /* align the text vertically centered */
+  //   padding-left: 29px;     /* make text start to the right of the image */
+
+  //   padding-top: 6px;
+  //   margin-left: 12px;
+
+  // }
+
+  &__icon {
+    background-image: url(../picture/Vector.png);
+    //background-size: 32px 32px;
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    vertical-align: middle;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.main__hero-section-container {
+  width: 1152px;
+  margin: auto;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 96px 0px 96px 0px;
+
+  &_content-text {
+    width: 466px;
+    padding-right: 62px;   // почему padding растягивает контейнер на этот размер, а не сдвигает контент внутрь ?
+
+    &-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #282523;
+      margin-bottom: 32px;
+  
+      &-word {
+        color: #F3933D;
+      }
+    }
+
+    &-ph1 {
+      font-size: 18px;
+      font-weight: 400;
+      color: #443F3B;
+      margin-bottom: 32px;
+      line-height: 27px;
+      //font-family: inter;
+    }
+  
+    &-ph2 {
+      font-size: 14px;
+      font-weight: 400;
+      color: #94908C;
+      margin-bottom: 16px;
+    }
+  }
+
+  &_content-img {
+    background: url(../picture/hero-Img.png);
+    width: 548px;
+    height: 647px;
+    background-position-x: -85px;
+  }
+
+
+}

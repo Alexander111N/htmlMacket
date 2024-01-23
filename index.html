@@ -3,14 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style/style.css">
   <title>Document</title>
 </head>
 <body>
-  <div class="example">мой блок</div>
-  <input id="dd" type="button" value="Button">
-  <div>ddd11224411111</div>
-  
+
+  <header class="header">
+    <div class="header__container">
+      <div class="header__menu">
+        <div class="header__logo logo ">
+          <a class="logo__link" href="#">
+            <img class="logo__img" src="/picture/Logo.png">
+          </a>
+        </div>     
+        <!-- Посмотреть почему если обернуть блок ul в div, то наш блок div растягивается на header__menu -->
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">
+                Accueil
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">
+                Nous services
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">
+                Vos defis
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">
+                A propos
+              </a>
+            </li>
+          </ul>
+          <button class="button button--header" type="button">Planifiez un call</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="main">
+    <!-- <div class="container">
+        // сюда нужно вкладывать все контейнеры что в body?
+    </div> -->
+
+    <div class="main__hero-section-container">
+      <div class="main__hero-section-container_content-text">
+        <div class="main__hero-section-container_content-text-title">
+          Votre 
+          <span class="main__hero-section-container_content-text-title-word">Partenaire</span> 
+          de Transformation Globale
+        </div>
+        <div class="main__hero-section-container_content-text-ph1">Nous maximisons la performance de votre entreprise grâce à une approche holistique alliant expertise stratégique, gestion opérationnelle et amélioration continue.</div>
+        <div class="main__hero-section-container_content-text-ph2">Ensemble, nous créons des entreprises agiles, innovantes et résilientes face aux défis du marché.</div>
+        <button class="button button--hero-section" type="button">
+<!-- 
+            Réservez un call Aujourd’hui
+            <img src="/picture/Vector.png"> -->
+
+            <!-- <div>
+              <span>Réservez un call Aujourd’hui</span>
+              <span class="button__icon"></span>
+            </div> -->
+            Réservez un call Aujourd’hui 
+            <i class="button button--hero-section button__icon"></i>
+
+        </button>
+      </div>
+      <!-- С картинками поработать побольше -->
+      <div class="main__hero-section-container_content-img"></div>      
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+
+    </div>
+
+  </footer>
 
   <script src="js/script.js"></script> 
 </body>
