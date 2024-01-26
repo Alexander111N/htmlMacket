@@ -7,13 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-
-  <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="style/style.css">
-  <title>Document</title>
+  <title>DLC</title>
 </head>
 <body>
-
   <header class="header">
     <div class="header__container">
       <div class="header__menu">
@@ -26,7 +23,7 @@
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a class="header__nav-link" href="">
+              <a class="header__nav-link header__nav-link--active" href="">
                 Accueil
               </a>
             </li>
@@ -54,9 +51,10 @@
 
   <div class="main">
     <!-- <div class="container">
-        // сюда нужно вкладывать все контейнеры что в body?
+        // сюда нужно вкладывать все контейнеры что в body? Нужно ли им делать общую обертку? или для них общая обертка main ?
     </div> -->
 
+    <!-- Features Section -->
     <div class="main__hero-section-container">
       <div class="main__hero-section-container_content-text">
         <div class="main__hero-section-container_content-text-title">
@@ -67,29 +65,224 @@
         <div class="main__hero-section-container_content-text-ph1">Nous maximisons la performance de votre entreprise grâce à une approche holistique alliant expertise stratégique, gestion opérationnelle et amélioration continue.</div>
         <div class="main__hero-section-container_content-text-ph2">Ensemble, nous créons des entreprises agiles, innovantes et résilientes face aux défis du marché.</div>
         <button class="button button--hero-section" type="button">
-<!-- 
             Réservez un call Aujourd’hui
-            <img src="/picture/Vector.png"> -->
-
-            <!-- <div>
-              <span>Réservez un call Aujourd’hui</span>
-              <span class="button__icon"></span>
-            </div> -->
-            Réservez un call Aujourd’hui 
-            <i class="button button--hero-section button__icon"></i>
-
         </button>
       </div>
       <!-- С картинками поработать побольше -->
       <div class="main__hero-section-container_content-img"></div>      
     </div>
+
+    <!-- Features Section -->
+    <div class="main__features features">
+      <div class="block-title">
+        <div class="block-title__first-title">Méthodes de travail</div>
+        <div class="block-title__second-title">Conseil, Accompagnement et Coaching</div>
+        <div class="block-title__line"></div>
+      </div>
+      <div class="features__block-content">
+        <div class="features__item features__item--color">
+          <div class="features__item-first-elem-white"></div>
+          <span class="features__item-second-elem-white">Analyse Approfondie de la Situation Actuelle</span>
+          <span class="features__item-third-elem-white">Évaluation exhaustive de votre organisation pour identifier les opportunités d'amélioration et élaborer des stratégies.</span>
+        </div>
+        <div class="features__item">
+          <div class="features__item-first-elem-black"></div>
+          <span class="features__item-second-elem-black">Définition des Objectifs Stratégiques</span>
+          <span class="features__item-third-elem-black">Collaboration étroite pour définir des objectifs clairs alignés sur votre vision, assurant une direction stratégique cohérente.</span>
+        </div>
+        <div class="features__item features__item--color">
+          <div class="features__item-first-elem-white"></div>
+          <span class="features__item-second-elem-white">Conception de Nouveaux Processus</span>
+          <span class="features__item-third-elem-white">Création de processus innovants et adaptés pour optimiser l'efficacité opérationnelle et favoriser l'agilité organisationnelle.</span>
+        </div>
+        <div class="features__item">
+          <div class="features__item-first-elem-black"></div>
+          <span class="features__item-second-elem-black">Utilisation de Données et KPI</span>
+          <span class="features__item-third-elem-black">Intégration intelligente de données et de KPI pour guider les décisions stratégiques et mesurer les progrès vers vos objectifs.</span>
+        </div>
+        <div class="features__item features__item--color">
+          <div class="features__item-first-elem-white"></div>
+          <span class="features__item-second-elem-white">Formation et Communication</span>
+          <span class="features__item-third-elem-white">Des formations sur mesure pour développer les compétences de vos équipes et une communication claire pour assurer l'adhésion.</span>
+        </div>
+        <div class="features__item">
+          <div class="features__item-first-elem-black"></div>
+          <span class="features__item-second-elem-black">Adaptation à l'évolution</span>
+          <span class="features__item-third-elem-black">Flexibilité intégrée pour s'adapter aux changements du marché, garantissant une pérennité et une résilience constantes.</span>
+        </div>      
+      </div>
+    </div>
+
+    <!-- services -->
+    <div class="main__services services">
+      <div class="services__title block-title">
+        <div class="block-title__first-title">services & avantages</div>
+        <div class="block-title__second-title">Agilité, Innovation et Résilience</div>
+        <div class="block-title__line"></div>
+      </div>
+      <div class="services__block-content">
+        <div class="services__item">
+          <div class="services__item-text">
+            <div class="services__item-title">/services</div>
+            <div class="services__item-caption">Structuration et Organisation des entreprisesv</div>
+            <div class="services__item-description">Transformer la manière dont l’entreprise opère en mettant en place des structures efficaces, des processus optimisés et une culture organisationnelle alignée sur les objectifs stratégiques.</div>
+            <div class="services__item-benefices">
+              <div class="services__item-title">/Bénéfices</div>
+              <div class="services__item-checkbox">
+                <input class="services__item-checkbox-input" id="efficac" type="checkbox">
+                <label class="services__item-checkbox-label" for="efficac">Une transformation opérationnelle pour des structures efficaces</label>
+              </div>
+              <div class="services__item-checkbox">
+                <input class="services__item-checkbox-input" id="optimis" type="checkbox">
+                <label class="services__item-checkbox-label" for="optimis">Des processus optimisés</label>
+              </div>
+              <div class="services__item-checkbox">
+                <input class="services__item-checkbox-input" id="culture" type="checkbox">
+                <label class="services__item-checkbox-label" for="culture">Une culture alignée sur les objectifs stratégiques</label>
+              </div>
+            </div>
+            <button class="button button--services-item" type="button">Réservez la Prestation</button>
+          </div>
+          <div class="services__item-image">
+            <img class="services__item-image" src="/picture/Rectangle 10.png">
+          </div>
+        </div>
+
+        <div class="services__item">
+          <div class="services__item-image">
+            <img class="services__item-image" src="/picture/Rectangle 10 (1).png">
+          </div>
+          <div class="services__item-text">
+            <div class="services__item-title">/services</div>
+            <div class="services__item-caption">Structuration et Organisation des entreprisesv</div>
+            <div class="services__item-description">Transformer la manière dont l’entreprise opère en mettant en place des structures efficaces, des processus optimisés et une culture organisationnelle alignée sur les objectifs stratégiques.</div>
+            <div class="services__item-benefices">
+              <div class="services__item-title">/Bénéfices</div>
+              <div class="services__item-checkbox">
+                <input class="services__item-checkbox-input" id="efficac" type="checkbox">
+                <label class="services__item-checkbox-label" for="efficac">Une transformation opérationnelle pour des structures efficaces</label>
+              </div>
+              <div class="services__item-checkbox">
+                <input class="services__item-checkbox-input" id="optimis" type="checkbox">
+                <label class="services__item-checkbox-label" for="optimis">Des processus optimisés</label>
+              </div>
+              <div class="services__item-checkbox">
+                <input class="services__item-checkbox-input" id="culture" type="checkbox">
+                <label class="services__item-checkbox-label" for="culture">Une culture alignée sur les objectifs stratégiques</label>
+              </div>
+            </div>
+            <button class="button button--services-item" type="button">Réservez la Prestation</button>
+          </div>
+        </div>
+
+        <div class="services__item">
+          <div class="services__item-text">
+            <div class="services__item-title">/services</div>
+            <div class="services__item-caption">Structuration et Organisation des entreprisesv</div>
+            <div class="services__item-description">Transformer la manière dont l’entreprise opère en mettant en place des structures efficaces, des processus optimisés et une culture organisationnelle alignée sur les objectifs stratégiques.</div>
+            <div class="services__item-benefices">
+              <div class="services__item-title">/Bénéfices</div>
+              <div class="services__item-checkbox">
+                <input class="services__item-checkbox-input" id="efficac" type="checkbox">
+                <label class="services__item-checkbox-label" for="efficac">Une transformation opérationnelle pour des structures efficaces</label>
+              </div>
+              <div class="services__item-checkbox">
+                <input class="services__item-checkbox-input" id="optimis" type="checkbox">
+                <label class="services__item-checkbox-label" for="optimis">Des processus optimisés</label>
+              </div>
+              <div class="services__item-checkbox">
+                <input class="services__item-checkbox-input" id="culture" type="checkbox">
+                <label class="services__item-checkbox-label" for="culture">Une culture alignée sur les objectifs stratégiques</label>
+              </div>
+            </div>
+            <button class="button button--services-item" type="button">Réservez la Prestation</button>
+          </div>
+          <div class="services__item-image">
+            <img class="services__item-image" src="/picture/Rectangle 10 (2).png">
+          </div>
+        </div>
+        <span class="services__button">
+          <button class="button button--services" type="button">Afficher plus</button>
+        </span>
+      </div>
+
+    </div>
+    
+    <!-- Testimonials -->
+    <div class="main__testimonials testimonials">
+      <div class="block-title">
+        <div class="block-title__first-title">Témoignages clients</div>
+        <div class="block-title__second-title">Ce que nos clients disent de nous</div>
+        <div class="block-title__line"></div>
+      </div>
+      <div class="testimonials__content">
+        <div class="testimonials__content-item">
+          <div class="testimonials__item-first-elem"></div>
+          <div class="testimonials__item-second-elem">Grâce à l'approche holistique de DLC, notre entreprise a connu une transformation significative. Leurs conseils stratégiques ont été essentiels pour notre croissance.</div>
+          <div class="testimonials__item-third-elem">
+            <div class="testimonials__image-block">
+              <img class="testimonials__item-image" src="/picture/Avatars-1.png">
+            </div>
+            <div class="testimonials__contact-block">
+              <div class="testimonials__name-block">Alvin</div>
+              <div class="testimonials__position-block">National Factors Manager</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__content-item">
+          <div class="testimonials__item-first-elem"></div>
+          <div class="testimonials__item-second-elem">La formation de DLC a considérablement amélioré les compétences de notre équipe, contribuant à une croissance significative.</div>
+          <div class="testimonials__item-third-elem">
+            <div class="testimonials__image-block">
+              <img class="testimonials__item-image" src="/picture/Avatars-2.png">
+            </div>
+            <div class="testimonials__contact-block">
+              <div class="testimonials__name-block">Alvin</div>
+              <div class="testimonials__position-block">National Factors Manager</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__content-item">
+          <div class="testimonials__item-first-elem"></div>
+          <div class="testimonials__item-second-elem">La qualité exceptionnelle des services de DLC a renforcé notre réputation de marque et inspiré confiance à nos clients. Hautement recommandé.</div>
+          <div class="testimonials__item-third-elem">
+            <div class="testimonials__image-block">
+              <img class="testimonials__item-image" src="/picture/Avatars-3.png">
+            </div>
+            <div class="testimonials__contact-block">
+              <div class="testimonials__name-block">Alton</div>
+              <div class="testimonials__position-block">Direct Marketing Assistant</div>
+            </div>
+          </div>
+        </div>        
+      </div>  
+    </div>
+    
+    <!-- CTA -->
+    <div class="main__cta cta">
+      <div class="cta__content">
+        <div class="cta__content-title">Transformez votre entreprise dès aujourd'hui !!!</div>
+        <div class="cta__content-text">Réservez un entretien en ligne de 30 minutes avec nos experts pour discuter de vos besoins spécifiques et découvrir comment DLC peut vous aider à atteindre de nouveaux sommets.</div>
+        <button class="button button--cta" type="button">Réservez maintenant</button>
+      </div>
+    </div>
   </div>
 
   <footer>
-    <div class="container">
-
+    <div class="footer">
+      <div class="footer__contact">
+        <div class="footer__contact-title">Envoyez nous un message</div>
+        <form class="footer__contact-form">
+          <input class="footer__contact-form-item" type="text" name="prenom" placeholder="Prenom">
+          <input class="footer__contact-form-item" type="text" name="nom" placeholder="Nom">
+          <input class="footer__contact-form-item" type="email" name="email" placeholder="Email">
+          <input class="footer__contact-form-item" type="number" name="tel" placeholder="Numéro de téléphone">
+          <input class="footer__contact-form-item footer--width" type="text" name="sujet" placeholder="Sujet">
+          <textarea class="footer__contact-form-item footer--width" name="mes" placeholder="Message"></textarea>
+          <button class="button button--footer" type="submit">Envoyer</button>         
+        </form>
+      </div>
     </div>
-
   </footer>
 
   <script src="js/script.js"></script> 

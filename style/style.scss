@@ -1,12 +1,12 @@
 body {
-  border: 1px solid gainsboro;
+  //border: 1px solid gainsboro;
   font-family: 'Inter', sans-serif;
 }
 
 .header__container {
   width: 1152px;
   margin: auto;
-  border: 1px solid grey;
+  //border: 1px solid grey;
 }
 
 .header__menu {
@@ -39,6 +39,10 @@ body {
 .header__nav-link {
   color: #605953;
   text-decoration: none;
+
+  &--active {
+    color: #F3933D;
+  }
 }
 
 .button {
@@ -55,6 +59,39 @@ body {
   }
 
   &--hero-section{
+    background-color: #F3933D;
+    padding: 16px 24px 16px 24px;
+    color: #EFEEEE;
+  }
+
+  &--services-item {
+    font-weight: 400;
+    border-radius: 4px;
+    background-color: #FEF4EC;
+    padding: 16px 24px 16px 24px;
+    color: #443F3B;
+  }
+
+  &--services {
+    font-weight: 400;
+    border-radius: 4px;
+    background-color: #F3933D;
+    padding: 16px 24px 16px 24px;
+    color: #EFEEEE;
+    margin-left: auto; // почему auto не работает??
+    margin-right: auto;
+  }
+
+  &--cta {
+    font-weight: 600;
+    border-radius: 999px;
+    background-color: #FEF4EC;
+    padding: 16px 24px 16px 24px;
+    color: #443F3B;
+  }
+
+  &--footer {
+    font-weight: 600;
     background-color: #F3933D;
     padding: 16px 24px 16px 24px;
     color: #EFEEEE;
@@ -95,7 +132,7 @@ body {
 .main__hero-section-container {
   width: 1152px;
   margin: auto;
-  border: 1px solid grey;
+  //border: 1px solid grey;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,7 +141,7 @@ body {
 
   &_content-text {
     width: 466px;
-    padding-right: 62px;   // почему padding растягивает контейнер на этот размер, а не сдвигает контент внутрь ?
+    padding-right: 62px;
 
     &-title {
       font-size: 48px;
@@ -123,7 +160,6 @@ body {
       color: #443F3B;
       margin-bottom: 32px;
       line-height: 27px;
-      //font-family: inter;
     }
   
     &-ph2 {
@@ -140,6 +176,348 @@ body {
     height: 647px;
     background-position-x: -85px;
   }
+}
 
+  // Feature Section
+
+.main__features {
+  //border: 1px solid gray;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.features {
+  width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__block-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    align-content: space-between;
+    //border: 1px solid black; 
+  }
+
+  &__item {
+    width: 368px;
+    height: 318px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 8px;
+    padding: 24px;
+    box-sizing: border-box;
+    //border: 1px solid goldenrod;
+
+    &--color {
+      background-color: #F7B77D;
+    }
+
+    &-first-elem-white {
+      width: 52px;
+      height: 52px;
+    }
+
+    &-second-elem-white {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      color: #FEF4EC;
+    }
+
+    &-third-elem-white {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 27px */
+      letter-spacing: 0.09px;
+      color: #FEF4EC;
+    }
+
+    &-first-elem-black {
+      width: 52px;
+      height: 52px;
+    }
+
+    &-second-elem-black {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      color: #282523;
+    }
+
+    &-third-elem-black {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 27px */
+      letter-spacing: 0.09px;
+      color: #443F3B;
+    }
+  }
+}
+
+.block-title {
+  max-width: 1152px;
+  margin-bottom: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  &__first-title {
+    color: #94908C;
+    font-weight: 400;
+    font-size: 14px ;
+    text-transform: uppercase;
+  }
+
+  &__second-title {
+    margin: 8px 0 8px 0;
+    color: #282523;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  &__line {
+    margin: auto;
+    width: 100px;
+    border-bottom: solid 2px #443F3B;
+  }
+}
+
+.main__testimonials {
+  padding-bottom: 96px;
+}
+
+.testimonials {
+  width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+ // border: 1px solid gray;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &__content-item {
+    box-sizing: border-box;
+    padding: 48px 24px 48px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #FEF4EC;
+    border-radius: 8px;
+
+    width: 368px; // потом попробовать без них. все само должно расставиться
+    height: 403px;
+  }
+
+  &__item-first-elem {
+    width: 52px;
+    height: 52px;
+  }
+
+  &__item-second-elem {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: #443F3B;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.09px;
+  }
+
+  &__item-third-elem {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  &__item-image {
+    width: 72px;
+    height: 72px;
+  }
+
+  &__name-block {
+    color: #282523;
+    margin-bottom: 4px;
+  }
+
+  &__position-block {
+    color: #94908C;
+  }
+}
+
+//CTA
+
+.main__cta {
+ margin-bottom: 96px;
+}
+
+.cta {
+  width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+  //border: 1px solid gray;
+
+  &__content {
+    text-align: center;
+    border-radius: 16px;
+    padding: 96px 0 96px 0;
+    background-color: #F3933D;
+
+    &-title {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 19.6px */
+      letter-spacing: 0.07px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      color: #FEF4EC;
+    }
+
+    &-text {
+      width: 956px;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 36.4px */
+      margin: 0 auto 32px auto;
+      color: #FEF4EC;
+    }
+  }
+}
+
+//services
+
+.main__services {
+  padding-bottom: 96px;
+}
+
+.services {
+  width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+  //border: 1px solid gray;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+
+    &-text {
+      width: 528px;
+    }
+
+    &-title {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #94908C;
+      margin-bottom: 12px;
+    }
+
+    &-caption {
+      font-size: 24px;
+      font-weight: 600;
+      color: #282523;
+      margin-bottom: 24px;
+    }
+
+    &-description {
+      font-size: 18px;
+      font-weight: 400;
+      color: #443F3B;
+      margin-bottom: 24px;
+    }
+
+    &-checkbox-input {
+      color: #F3933D;
+    }
+
+    &-checkbox-label {
+      font-size: 16px;
+      font-weight: 400;      
+      color: #F3933D;
+    }
+
+    &-benefices {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item-image {
+    width: 528px;
+    height: 500px;
+  }
+
+  &__button {
+    display: table; // не пойму почему кнопка не центрируется если убрать этот display??
+    margin: auto;
+  }
+}
+
+.footer {
+  width: 1440px;
+  margin: auto;
+  //border: 1px solid grey;
+  background: url(../picture/footer_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__contact {
+    width: 653px;
+    padding: 96px 0 96px 0;
+    margin: auto;
+
+    &-title {
+      font-size: 28px;
+      font-weight: 600;
+      color: #FEF4EC;
+      margin-bottom: 40px;
+    }
+
+    &-form {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+
+      &-item {
+        width: 314px;
+        font-size: 18px;
+        padding: 6px 16px 6px 16px;
+        border-radius: 4px;
+        //border: 1px solid #FEF4EC;
+        box-sizing: border-box;
+        color: #443F3B;
+        background-color: #FEF4EC;
+      }
+
+      &-item::placeholder {
+        font-size: 14px;
+        color: #94908C;
+      }
+
+      textarea {
+        height: 147px;
+      }
+    }
+  }
+
+  &--width {
+    width: 100%;
+  }
 
 }
+

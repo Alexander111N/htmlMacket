@@ -7,4 +7,4 @@ as[0].addEventListener('click', () => {console.log('сработала кноп�
 
 console.log('as', as)
 
-//browser-sync start --server --files "*.css, *.html, js/*.js" // для автоматического обновления браузера
+//browser-sync start --server --files "style/*.css, *.html, js/*.js" // для автоматического обновления браузера
